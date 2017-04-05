@@ -1,9 +1,13 @@
-# CodeIgniter 2
-Open Source PHP Framework (originally from EllisLab)
+Proyecto PHP con el framework Codeigniter para gestionar las valoraciones de películas.
 
-For more info, please refer to the user-guide at http://www.codeigniter.com/userguide2/  
-(also available within the download package for offline use)
+Para el uso y verificación de este proyecto es recomendable seguir las instrucciones:
 
-**WARNING:** *CodeIgniter 2.x is no longer under development and only receives security patches until October 31st, 2015.
-Please update your installation to the latest CodeIgniter 3.x version available
-(upgrade instructions [here](http://www.codeigniter.com/userguide3/installation/upgrade_300.html)).*
+Dentro de la carpeta \application\config esta el archivo de configuracion config.php y databese.php. Con el primero se configura el proyecto de codeigniter y con el segundo se configura la conexion a la base de datos. Si se va verificar de manera local o en un servidor remoto se debe cambiar la url base del proyecto en el archivo config.php
+
+<code>$config['base_url'] = 'http://localhost/Valoraciones/';</code><br>
+Actualmente esta asi pero si se verifica en un servidor remoto, se modifica localhost por la ip del servidor
+
+Si el administrador de base de datos de mysql usa contraseña, esta se agregar al archivo database.php en la linea de codigo:
+
+<code>$db['default']['password'] = '';</code><br>
+Actualmente no se usa contraseña porque el administrador de base datos usado no tenia contraseña para el acceso a las bases de datos.

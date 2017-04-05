@@ -11,3 +11,5 @@ Si el administrador de base de datos de mysql usa contraseña, esta se agregar a
 
 <code>$db['default']['password'] = '';</code><br>
 Actualmente no se usa contraseña porque el administrador de base datos usado no tenia contraseña para el acceso a las bases de datos.
+
+El archivo de la base de datos es prueba_valoraciones.sql. En el administrador de la base de datos se debe importar este archivo.
